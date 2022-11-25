@@ -3,24 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/navigation_first">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/navigation_first"
         android:name="com.inzinger.bestapp.FirstFragment"
         tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.inzinger.bestapp.SettingsFragment"
-        tools:layout="@layout/fragment_settings">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+    <fragment
+        android:id="@+id/navigation_second"
+        android:name="com.inzinger.bestapp.FirstFragment"
+        tools:layout="@layout/fragment_first">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_third"
+        android:name="com.inzinger.bestapp.FirstFragment"
+        tools:layout="@layout/fragment_first">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.inzinger.bestapp.ProfileFragment"
+        tools:layout="@layout/fragment_profile_settings">
     </fragment>
 </navigation>

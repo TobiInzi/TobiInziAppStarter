@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_settings_bar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="?attr/colorSecondaryContainer"
+    >
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:paddingVertical="14dp"
+        android:src="@drawable/ic_user_regular"
+        android:contentDescription="Image of User" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/opensans_medium"
+        android:text="Profile Settings"
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:paddingVertical="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_angle_right_solid"/>
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

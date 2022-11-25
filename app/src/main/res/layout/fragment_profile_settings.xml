@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".SettingsFragment">
+    tools:context=".ProfileFragment">
 
     <TextView
         android:id="@+id/textview_hello"
@@ -28,8 +28,9 @@
         app:layout_constraintTop_toBottomOf="@id/textview_hello"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/first_settings_bar"
+    <include
+        layout="@layout/settings_layout_1"
+        android:id="@+id/first_settings_block"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:orientation="horizontal"
@@ -37,47 +38,13 @@
         android:background="@drawable/rounded_corners"
         android:backgroundTint="?attr/colorSecondaryContainer"
         app:layout_constraintTop_toBottomOf="@id/textview_name">
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:paddingVertical="14dp"
-            android:src="@drawable/ic_user_regular"
-            android:contentDescription="Image of User" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="12dp"
-            android:gravity="center"
-            android:fontFamily="@font/opensans_medium"
-            android:text="Profile Settings"
-            android:textColor="?attr/colorOnSecondaryContainer"
-            android:textSize="16sp" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="5"/>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@color/transparent"
-            android:paddingVertical="16dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_angle_right_solid"/>
-
-        <View
-            android:layout_width="8dp"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+    </include>
 
     <include
+        layout="@layout/settings_layout_2"
+        android:id="@+id/second_settings_block"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        layout="@layout/settings_layout_2"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/first_settings_bar"/>
+        app:layout_constraintTop_toBottomOf="@id/first_settings_block"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

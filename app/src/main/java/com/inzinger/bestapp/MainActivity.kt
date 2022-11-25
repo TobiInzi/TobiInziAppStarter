@@ -1,22 +1,12 @@
 package com.inzinger.bestapp
 
 import android.os.Bundle
-import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.LinearLayout
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet.Constraint
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
-import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.inzinger.bestapp.databinding.ActivityMainBinding
 
@@ -40,30 +30,37 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 
-        setupBottomBar()
+        setupBottomNavigationBar()
     }
 
-    private fun setupBottomBar() {
+    private fun setupBottomNavigationBar() {
+        //setup navigation
         val bottomNavigationMenu = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
         bottomNavigationMenu.setOnItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.item_my_cards -> {
-                    // Respond to navigation item 1 click
-                    //test test test
-                    navController.navigate(R.id.FirstFragment)
+                R.id.item_bottom_bar_1 -> {
+                    navController.navigate(R.id.navigation_first)
                     true
                 }
-                R.id.item_profile -> {
-                    // Respond to navigation item 2 click
-                    navController.navigate(R.id.SecondFragment)
-
+                R.id.item_bottom_bar_2 -> {
+                    navController.navigate(R.id.navigation_profile)
+                    true
+                }
+                R.id.item_bottom_bar_3 -> {
+                    navController.navigate(R.id.navigation_first)
+                    true
+                }
+                R.id.item_bottom_bar_profile -> {
+                    navController.navigate(R.id.navigation_profile)
                     true
                 }
                 else -> false
             } }
-        val badge = bottomNavigationMenu.getOrCreateBadge(R.id.item_my_cards)
-        badge.isVisible = true
-        badge.backgroundColor = ContextCompat.getColor(this, R.color.main_destroy_color)
+        //items not reselectable
+        bottomNavigationMenu.setOnItemReselectedListener { }
+
+        //appbar same background color as bottom navigation bar
         val appBar = findViewById<ConstraintLayout>(R.id.top_app_bar)
         appBar.background = bottomNavigationMenu.background
     }

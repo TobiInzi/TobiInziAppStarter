@@ -43,6 +43,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="profile_title">Profile</string>
-    <string name="my_cards_title">My Cards</string>
+
+    <!-- BottomNavigationBar strings -->
+    <string name="item_bottom_bar_1_title">Item 1</string>
+    <string name="item_bottom_bar_2_title">Item 2</string>
+    <string name="item_bottom_bar_3_title">Item 3</string>
+    <string name="item_bottom_bar_profile_title">Profile</string>
+
 </resources>
