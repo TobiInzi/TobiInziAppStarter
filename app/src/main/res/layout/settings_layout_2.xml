@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="?attr/colorSecondaryContainer">
+
+    <LinearLayout
+        android:id="@+id/second_settings_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="14dp"
+            android:src="@drawable/ic_shield_halved_solid"
+            android:contentDescription="Image of User" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_medium"
+            android:text="Privacy Notice"
+            android:textColor="?attr/colorOnSecondaryContainer"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingVertical="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_angle_right_solid"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="?attr/colorOnSecondaryContainer"/>
+
+    <LinearLayout
+        android:id="@+id/third_settings_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="14dp"
+            android:src="@drawable/ic_message_regular"
+            android:contentDescription="Image of User" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_medium"
+            android:text="Give me Feedback"
+            android:textColor="?attr/colorOnSecondaryContainer"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingVertical="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_angle_right_solid"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

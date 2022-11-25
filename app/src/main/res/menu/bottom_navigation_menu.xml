@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_my_cards"
+        android:enabled="true"
+        android:icon="@drawable/ic_card"
+        android:title="@string/my_cards_title" />
+    <item
+        android:id="@+id/item_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_regular"
+        android:title="@string/profile_title"/>
+</menu>

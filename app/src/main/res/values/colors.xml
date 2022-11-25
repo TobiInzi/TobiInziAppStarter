@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_nav_bar_dark_color">#FF2a2831</color>
+    <color name="bottom_nav_bar_light_color">#FFf2ecf6</color>
+
+    <color name="main_light_color">#FFecf4f7</color>
+    <color name="main_semi_light_color">#FF8296a8</color>
+
+    <color name="main_dark_color">#FF09131c</color>
+    <color name="main_semi_dark_color">#FF1d2935</color>
+
+    <color name="main_destroy_color">#FFfe6756</color>
+    <color name="main_blue_color">#FF36a6fc</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="White">#FFFFFFFF</color>
+    <color name="Silver">#FFC0C0C0</color>
+    <color name="Gray">#FF808080</color>
+    <color name="Black">#FF000000</color>
+    <color name="Red">#FFFF0000</color>
+    <color name="Maroon">#FF800000</color>
+    <color name="Yellow">#FFFFFF00</color>
+    <color name="Olive">#FF808000</color>
+    <color name="Lime">#FF00FF00</color>
+    <color name="Green">#FF008000</color>
+    <color name="Aqua">#FF00FFFF</color>
+    <color name="Teal">#FF008080</color>
+    <color name="Blue">#FF0000FF</color>
+    <color name="Navy">#FF000080</color>
+    <color name="Fuchsia">#FFFF00FF</color>
+    <color name="Purple">#FF800080</color>
+</resources>
